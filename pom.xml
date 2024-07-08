@@ -12,7 +12,7 @@
 	<artifactId>TrilhaBackEndJR</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TrilhaBackEndJR</name>
-	<description>API Desenvolvida para o desafio da trilha backend do Código Certo.</description>
+	<description>API Desenvolvida para o desafio da trilha backend do CódigoCerto.</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -41,28 +41,39 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.xerial</groupId>
 			<artifactId>sqlite-jdbc</artifactId>
 			<version>3.36.0.3</version>
 		</dependency>
+
 		<dependency> <!-- sqlite -->
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-community-dialects</artifactId>
+		</dependency>
+
+		<dependency> <!-- swagger -->
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.6.0</version>
 		</dependency>
 	</dependencies>
 
