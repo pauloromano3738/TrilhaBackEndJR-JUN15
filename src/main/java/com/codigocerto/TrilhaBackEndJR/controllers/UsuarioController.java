@@ -33,13 +33,6 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioList);
     }
 
-    @PostMapping("/adicionar")
-    public ResponseEntity createUsuario(@RequestBody @Valid UsuarioRequestDTO data) {
-
-        Usuario usuario = new Usuario(data);
-        usuarioRepository.save(usuario);
-        return ResponseEntity.ok().build();
-    }
 
     @PutMapping("atualizar/{id}")
     public ResponseEntity updateUsuario(@PathVariable Long id, @RequestBody @Valid UsuarioRequestDTO data) {
